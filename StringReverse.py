@@ -1,4 +1,8 @@
-stringToReverse = "Reverse me!"
+"""
+String Reverse
+
+Take a given string and return its character order.
+"""
 
 def typicalReverseString(stringInput):
 	"""Reverses the string by making a new string for each character appended in reverse. Memory inefficient"""
@@ -37,6 +41,9 @@ def recursiveReverseString(stringInput, stringTracker):
 def fastReverseString(stringInput):
 	"""Uses extended string slicing to cover the for loop"""
 	return stringInput[::-1]
-# print type('h')
+
+
+# test
+stringToReverse = "Reverse me!"
 print recursiveReverseStringWrapper(stringToReverse)
 # recursiveReverseStringWrapper(1)

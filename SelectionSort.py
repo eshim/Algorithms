@@ -1,8 +1,13 @@
 """
 Selection Sort 
+
 Find the smallest element of the list and swap it to the first index, 
 then search the list, without the first element and repeat until the
 sublist is 0.
+
+Worst Case Performance: O(n^2)
+Best Case Performance: O(n^2)
+Average Case Performance: O(n^2)
 """
 
 mylist = [0,10,3,3,3,2,11,22,40,-1,5]

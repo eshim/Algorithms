@@ -1,3 +1,16 @@
+"""
+Insertion Sort
+
+Take the last value of a list and compare it to each element
+of the sorted sublist and places it accordingly until there 
+are no more elements of the given list.
+
+
+Worst Case Performance: O(n^2) comparisons and swaps
+Best Case Performance: O(n) comparisons, O(1) swaps
+Average Case Performance: O(n^2) comparisons and swaps
+"""
+
 def insertionSort(inlist):
 	inlistLength = len(inlist)
 
@@ -23,7 +36,7 @@ def insertionSort2(inlist):
 
 	return inlist
 
-
+# test
 mylist = [0,10,3,2,11,22,40,-1,5]
 
 print insertionSort(mylist)

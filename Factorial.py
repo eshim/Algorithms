@@ -34,7 +34,7 @@ def factorialLoop(n):
 		return 1
 
 
-print factorialTail(4, 1)
+# print factorialTail(4, 1)
 # wrapperFunction(500)
 # print factorialLoop(8)
 
@@ -69,45 +69,5 @@ def binarySearch(aList, value, listMin = 0 , listMax = None):
 
 
 
-# def binary_search(value, items, low=0, high=None):
-#     """
-#     Binary search function.
-#     Assumes 'items' is a sorted list.
-#     The search range is [low, high)
-#     """
-
-#     high = len(items) if high is None else high
-#     pos = low + (high - low) / 2
-
-#     if pos == len(items):
-#         return False
-#     elif items[pos] == value:
-#         return pos
-#     elif high == low:
-#         return False
-#     elif items[pos] < value:
-#         return binary_search(value, items, pos + 1, high)
-#     else:
-#         assert items[pos] > value
-#         return binary_search(value, items, low, pos)
-
-# def binarySearch(aList, n, listMin = 0, listMax = None):
-# 	if listMax is None:
-# 		 listMax = len(aList)
-
-# 	while listMax > listMin:
-# 		# print listMax
-# 		# print listMin
-# 		pos = (listMax + listMin)/2 
-# 		# print aList[pos]
-# 		if n == aList[pos]:
-# 			return pos
-# 		elif n > aList[pos]:
-# 			listMin = pos + 1
-# 		elif n < aList[pos]:
-# 			listMax = pos
-# 	return -1
-
-
-# index = binarySearch(myList, 22, 0, 25) # list boundaries reversed
-# print index
+index = binarySearch(myList, 22, 0, 25) # list boundaries reversed
+print index

@@ -1,3 +1,9 @@
+"""
+Trees
+
+Implementation of a Binary Search Tree with associated methods.
+"""
+
 class Node:
 	def __init__(self, value = None, left = None, right = None):
 		self.left = left
@@ -89,6 +95,8 @@ def printBreadthFirst(node):
 			queue.append(current_node.left)
 		if current_node.right != None:
 			queue.append(current_node.right)
+
+
 def printTree(me):
   if me == None:
     return ""
@@ -103,7 +111,7 @@ def height(node):
 		return max(height(node.left), height(node.right)) + 1
 
 
-
+# tests
 
 node = Node(10)
 tree = BinarySearchTree(node)
@@ -124,26 +132,3 @@ insertRecursive(node, 5)
 # printInOrder(node)
 # printTree(node)
 printBreadthFirst(node)
-#   public void insertRecursive(Node current, int value) {
-#     if (value < current.value) {
-#       if (current.left == null) {
-#         current.left = new Node(value);
-#       } else {
-#         insertRecursive(current.left, value);
-#       }
-#     } else {
-#       if (current.right == null) {
-#         current.right = new Node(value);
-#       } else {
-#         insertRecursive(current.right, value);
-#       }
-#     }
-#   }
-  
-#   void displayInorder(Node node) {
-#     if (node != null) {
-#       displayInorder(node.left);
-#       System.out.print(node.value + " ");
-#       displayInorder(node.right);
-#     }
-#   }	
