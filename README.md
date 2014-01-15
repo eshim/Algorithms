@@ -1,4 +1,4 @@
 Algorithms
 ==========
 
-My various solutions to the Project Euler puzzles.
+My attempts at implementing algorithms for sorting and searching, among others.
